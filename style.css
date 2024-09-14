@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a.cta {
+    background: #f0ad4e;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.hero {
+    background: #f7f7f7;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.hero .container .hero-image img{
+    width: 50%;
+    
+}
+
+.hero .container .hero-text p{
+    padding-bottom: 10px;
+    font-weight: bold;
+} 
+.hero .container .hero-text a{
+    padding-bottom: 10px;
+}
+
+
+.cta-btn {
+    background: #f0ad4e;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.brands img {
+    width: 100px;
+    margin: 20px;
+}
+.brands .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.how-to-use, .about-us, .categories, .contact {
+    padding: 50px 0;
+}
+.how-to-use .container .contact img{
+    width: 50%;
+}
+
+
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.category {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.category img {
+    width: 100%;
+}
+
+.category span {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-networks a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/* General Styles for mobile-first approach */
+body {
+    font-size: 16px;
+}
+
+/* Large screens (desktops, laptops) */
+@media only screen and (min-width: 1024px) {
+    .hero {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .grid {
+        flex-direction: row;
+    }
+
+    .category {
+        width: 30%;
+    }
+}
+
+/* Tablets (medium screens) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .grid {
+        flex-direction: row;
+    }
+
+    .category {
+        width: 45%;
+    }
+}
+
+/* Small screens (mobile phones) */
+@media only screen and (max-width: 767px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .cta-btn {
+        padding: 10px 15px;
+    }
+
+    .grid {
+        flex-direction: column;
+    }
+
+    .category {
+        width: 100%;
+    }
+
+    .brands img {
+        width: 80px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    .social-networks a {
+        font-size: 1.2em;
+    }
+    .how-to-use .container .content {
+        width: 35%;
+    }
+}
